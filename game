@@ -1,0 +1,50 @@
+shell.run("clear")
+--Variables
+x=1
+y=17
+jumpPossible=true
+canFire=true
+fireballX = x
+fireballY = y
+
+--Motion
+while true do
+	shell.run("blank")
+	paintutils.drawImage(paintutils.loadImage("charSprite"),x,y)
+	event = {os.pullEvent()}
+
+	if event[2] == 'a' then
+		if x == 1 then
+		else
+			x=x-1
+		end
+	end
+
+	if event[2] == 'd' then
+		if x == 51 then
+		else
+			x=x+1
+		end
+	end
+
+	if event[2] == 'w' then
+		if jumpPossible == true then
+			jumpPossible = false
+			y=y-1
+			jump = os.startTimer(.5)
+		end
+	end
+	if event[2] == jump then
+			y=y+1
+			jumpPossible=true
+	end
+
+--Attack
+	if canFire == true then
+		if event[2]==1 then
+			
+		end
+	end
+
+
+end
