@@ -4,8 +4,7 @@ x=1
 y=17
 jumpPossible=true
 canFire=true
-fireballX = x
-fireballY = y
+fireballPos = x
 
 --Motion
 while true do
