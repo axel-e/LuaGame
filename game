@@ -8,7 +8,8 @@ fireballPos = x
 
 --Motion
 while true do
-	shell.run("clear")
+	term.setBackgroundColor(colors.black)
+	term.clear()
 	paintutils.drawImage(paintutils.loadImage("charSprite"),x,y)
 	event = {os.pullEvent()}
 
