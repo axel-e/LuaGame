@@ -9,7 +9,7 @@ fireballY = y
 
 --Motion
 while true do
-	shell.run("blank")
+	shell.run("clear")
 	paintutils.drawImage(paintutils.loadImage("charSprite"),x,y)
 	event = {os.pullEvent()}
 
