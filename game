@@ -6,13 +6,11 @@ jumpPossible=true
 canFire=true
 fireballPos = x
 
---Motion
 while true do
-	term.setBackgroundColor(colors.black)
-	term.clear()
 	paintutils.drawImage(paintutils.loadImage("charSprite"),x,y)
 	event = {os.pullEvent()}
 
+--Motion
 	if event[2] == 'a' then
 		if x == 0 then
 		else
