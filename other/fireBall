@@ -1,25 +1,23 @@
-fireballPos=x
-
-if fireX > x then
-	fireDir=1
-elseif fireX < x then
-	fireDir=0
+if event[2]==203 then
+	fireballPos=x-2
+elseif event[2]==205 then
+	fireballPos=x+2
 end
 
 while true do
 	sleep(0)
 	paintutils.drawImage(paintutils.loadImage("fireballImg"),fireballPos,18)
 	
-if fireDir==1 then
-	if fireballPos==51 then
+if event[2]==205 then
+	if fireballPos>52 then
 		break
 	else
 		fireballPos=fireballPos+1
 	end
 end
 
-if fireDir==0 then
-	if fireballPos==1 then
+if event[2]==203 then
+	if fireballPos<-1 then
 		break
 	else
 		fireballPos=fireballPos-1
