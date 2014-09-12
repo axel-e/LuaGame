@@ -1,7 +1,7 @@
 shell.run("clear")
 --Variables
 x=0
-y=17
+y=16
 jumpPossible=true
 canFire=true
 fireballPos = x
