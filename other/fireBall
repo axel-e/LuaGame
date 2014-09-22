@@ -1,3 +1,4 @@
+//Offsets fireballImg so it doesn't cut over the player.
 if event[2]==203 then
 	fireballPos=x-2
 elseif event[2]==205 then
@@ -7,7 +8,7 @@ end
 while true do
 	sleep(0)
 	paintutils.drawImage(paintutils.loadImage("fireballImg"),fireballPos,18)
-	
+//Determines direction, and moves fireballImg.
 if event[2]==205 then
 	if fireballPos>52 then
 		break
